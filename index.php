@@ -19,11 +19,11 @@ if (isset($_GET['dl']))
 	header('Content-Type: text/json');
 	header('Content-Disposition: attachment; filename="postal-codes-rep-dom.csv"');
 
+	echo '"URBANIZACION, SECTOR O PARAJE","PROVINCIA","CODIGO POSTAL"' . "\n";
+
 	for ($page_num = 1; $page_num <= $total_rows; $page_num+=$per_page) 
 	{
 		$html = file_get_html(DATA_URL . $page_num);
-
-		echo '"URBANIZACION, SECTOR O PARAJE","PROVINCIA","CODIGO POSTAL"' . "\n";
 
 		foreach($html->find('#gmp_jos_codigopostal', 0)->children(0)->find('tr') as $tr_num => $tr) 
 		{
