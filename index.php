@@ -60,7 +60,11 @@ if (isset($_GET['dl']))
 
         <p>
         	La data es extraida de <a href="http://inposdom.gob.do/servicios/codigo-postal.html" target="_blank">INPOSDOM</a>. <br>
+
+        	Si por alguna razón deja de funcionar por favor <a href="http://joserobinson.com/contacto/" target="_blank">avisame aquí</a>.
         </p>
+
+        <p><strong>Github:</strong> <a href="https://github.com/jrobinsonc/codigos-postales-rd" target="_blank">https://github.com/jrobinsonc/codigos-postales-rd</a></p>
 
 		<br><br>
 		<hr />
